@@ -222,7 +222,7 @@ class Mapping:
 			y = self.yb[ele]
 			if(x>=0 and y>=0):  # ele>0 kill 1 pixel (pixel 0 and default values coincides, should do +1 but... neglect for the moment)
 
-				I[x,y] = 1
+				I[x,y] += 1
 				# update counting statistics
 				self.histoChannel[ele] +=1
 
